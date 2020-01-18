@@ -184,3 +184,16 @@
 2020-01-19 01:38:07,641 [11544] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [SelectByProductId] Types: [:param0=[Int32, System.Int32]]
 2020-01-19 01:38:07,643 [11544] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Open Connection "19426640" to "PostgreSql, Npgsql provider V2.2.7.0".
 2020-01-19 01:38:07,646 [11544] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Close Connection "19426640" to "PostgreSql, Npgsql provider V2.2.7.0".
+[Header]\r\n2020-01-19 01:48:38,726 [25308] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [SqlMap.config] to list of watched files.
+2020-01-19 01:48:38,926 [25308] DEBUG IBatisNet.Common.Utilities.ConfigWatcherHandler [(null)] - Adding file [ProductMap.xml] to list of watched files.
+2020-01-19 01:48:38,962 [25308] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [SelectAllProduct] Prepared SQL: [SELECT Product_Id,Product_Name,Product_Company,Sign_Date,Update_Date FROM Product]
+2020-01-19 01:48:38,986 [25308] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [SelectByProductId] Prepared SQL: [SELECT Product_Id,Product_Name,Product_Company,Sign_Date,Update_Date FROM Product where Product_Id =  :param0]
+2020-01-19 01:48:38,991 [25308] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [InsertProduct] Prepared SQL: [INSERT into product(product_id, product_company, product_name, sign_date, update_date)     VALUES( :param0 , :param1 ,  :param2  ,  :param3  ,  :param4 )]
+2020-01-19 01:48:38,993 [25308] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [InsertProduct.SelectKey] Prepared SQL: [SELECT nextval('product_product_id_seq')]
+2020-01-19 01:48:38,995 [25308] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [UpdateProduct] Prepared SQL: [Update Product SET ProductName= :param0 ,     ProductCompany= :param1 ,        SignDate= :param2 ,     UpdateDate= :param3      Where ProductId= :param4]
+2020-01-19 01:48:38,998 [25308] DEBUG IBatisNet.DataMapper.Configuration.Statements.PreparedStatementFactory [(null)] - Statement Id: [DeleteProductById] Prepared SQL: [Delete From Product Where ProductId= :param0]
+2020-01-19 01:48:39,010 [25308] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [SelectByProductId] PreparedStatement : [SELECT Product_Id,Product_Name,Product_Company,Sign_Date,Update_Date FROM Product where Product_Id =  :param0]
+2020-01-19 01:48:39,019 [25308] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [SelectByProductId] Parameters: [:param0=[value,16]]
+2020-01-19 01:48:39,019 [25308] DEBUG IBatisNet.DataMapper.Commands.DefaultPreparedCommand [(null)] - Statement Id: [SelectByProductId] Types: [:param0=[Int32, System.Int32]]
+2020-01-19 01:48:39,024 [25308] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Open Connection "49940297" to "PostgreSql, Npgsql provider V2.2.7.0".
+2020-01-19 01:48:39,045 [25308] DEBUG IBatisNet.DataMapper.SqlMapSession [(null)] - Close Connection "49940297" to "PostgreSql, Npgsql provider V2.2.7.0".
