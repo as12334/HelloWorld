@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\block\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\block\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_HelloWorld.862667564.00" t="ExcludeRecursive" />
+    <e p="E:\WORK\HelloWorld" t="IncludeFlat">
+      <e p="HelloWorld.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Web" t="IncludeRecursive">
+        <e p="Agent" t="Include">
+          <e p="Web" t="Include">
+            <e p="Handler" t="Include">
+              <e p="LoginHandler.cs" t="Include" />
+              <e p="ValidateImgHandler.cs" t="Include" />
+            </e>
+            <e p="LoginUserControl" t="Include">
+              <e p="Login1" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="Login2" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="login3" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="Login4" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="Login5" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="Login6" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="Login7" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="login8" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+              <e p="Login9" t="Include">
+                <e p="LoginControl.cs" t="Include" />
+              </e>
+            </e>
+            <e p="WebBase" t="Include">
+              <e p="CallBLL.cs" t="Include" />
+              <e p="MemberPageBase.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BLL" t="Include">
+          <e p="cz_admin_sysconfigBLL.cs" t="Include" />
+          <e p="cz_credit_flowBLL.cs" t="Include" />
+          <e p="cz_login_logBLL.cs" t="Include" />
+          <e p="cz_lotteryBLL.cs" t="Include" />
+          <e p="cz_phase_kl10BLL.cs" t="Include" />
+          <e p="cz_rate_kcBLL.cs" t="Include" />
+          <e p="cz_stat_onlineBLL.cs" t="Include" />
+          <e p="cz_stat_top_onlineBLL.cs" t="Include" />
+          <e p="cz_user_psw_err_logBLL.cs" t="Include" />
+          <e p="cz_users_childBLL.cs" t="Include" />
+          <e p="cz_usersBLL.cs" t="Include" />
+        </e>
+        <e p="Common" t="Include">
+          <e p="CookieHelper.cs" t="Include" />
+          <e p="DESEncrypt.cs" t="Include" />
+          <e p="JsonHandle.cs" t="Include" />
+          <e p="JsonHelper.cs" t="Include" />
+          <e p="LSRequest.cs" t="Include" />
+          <e p="PageBase.cs" t="Include" />
+          <e p="Redis" t="Include">
+            <e p="CacheHelper.cs" t="Include" />
+            <e p="FileCacheHelper.cs" t="Include" />
+            <e p="RedisConfiguration.cs" t="Include" />
+            <e p="RedisConnectType.cs" t="Include" />
+            <e p="RedisExpires.cs" t="Include" />
+            <e p="RedisKeys.cs" t="Include" />
+            <e p="RedisManager.cs" t="Include" />
+          </e>
+          <e p="Utils.cs" t="Include" />
+        </e>
+        <e p="DBUtility" t="Include">
+          <e p="BaseDA.cs" t="Include" />
+          <e p="CommandText.cs" t="Include" />
+          <e p="EffentNextType.cs" t="Include" />
+          <e p="NpSqlBase.cs" t="Include" />
+        </e>
+        <e p="Default.aspx" t="Include" />
+        <e p="Default.aspx.cs" t="Include" />
+        <e p="Default.aspx.designer.cs" t="Include" />
+        <e p="Global.asax" t="Include" />
+        <e p="Handler" t="Include">
+          <e p="LoginHandler.ashx" t="Include" />
+          <e p="ValidateImgHandler.ashx" t="Include" />
+        </e>
+        <e p="LoginUserControl" t="Include">
+          <e p="Login5" t="Include">
+            <e p="Styles" t="Include">
+              <e p="images" t="Include">
+                <e p="AL_t_01.jpg" t="Include" />
+                <e p="AL_t_02.jpg" t="Include" />
+                <e p="AL_t_03.jpg" t="Include" />
+                <e p="bg.jpg" t="Include" />
+                <e p="btn.jpg" t="Include" />
+              </e>
+              <e p="userlogin.css" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Maps" t="Include">
+          <e p="ProductMap.xml" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="agent_userinfo_session.cs" t="Include" />
+          <e p="cz_login_log.cs" t="Include" />
+          <e p="cz_rate_kc.cs" t="Include" />
+          <e p="cz_stat_online.cs" t="Include" />
+          <e p="cz_users.cs" t="Include" />
+          <e p="cz_users_child.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="RedisConnectSplit.cs" t="Include" />
+          <e p="ReturnResult.cs" t="Include" />
+          <e p="Validate.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Providers.config" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Agent" t="Include">
+            <e p="AgentFinction.js" t="Include" />
+            <e p="Container.js" t="Include" />
+            <e p="Default.js" t="Include" />
+            <e p="GameDefault.js" t="Include" />
+            <e p="GameFinction.js" t="Include" />
+            <e p="GameKcFinction.js" t="Include" />
+            <e p="GameMiddle.js" t="Include" />
+            <e p="LoadMiddle.js" t="Include" />
+            <e p="SYSFinction.js" t="Include" />
+          </e>
+          <e p="ASC.js" t="Include" />
+          <e p="Format.js" t="Include" />
+          <e p="Globals.js" t="Include" />
+          <e p="jquery-1.10.2.js" t="Include" />
+          <e p="jquery-1.8.3.min.js" t="Include" />
+          <e p="jquery-ui-1.8.21.custom.min.js" t="Include" />
+          <e p="jquery.datepicker-zh-CN.js" t="Include" />
+          <e p="Jquery.js" t="Include" />
+          <e p="jquery.mobile-1.4.3.js" t="Include" />
+          <e p="login.js" t="Include" />
+          <e p="Member" t="Include">
+            <e p="common.js" t="Include" />
+            <e p="Default.js" t="Include" />
+            <e p="GameData.js" t="Include" />
+            <e p="GameDataKc.js" t="Include" />
+            <e p="GameDefault.js" t="Include" />
+            <e p="GameMiddle.js" t="Include" />
+            <e p="index.js" t="Include" />
+            <e p="jquery-ui.js" t="Include" />
+            <e p="jquery.bxslider.min.js" t="Include" />
+            <e p="libs.js" t="Include" />
+            <e p="login3" t="Include">
+              <e p="common.js" t="Include" />
+              <e p="config.js" t="Include" />
+              <e p="dialog.js" t="Include" />
+              <e p="home_main.min.js" t="Include" />
+              <e p="index.js" t="Include" />
+              <e p="jquery-ui.js" t="Include" />
+              <e p="jquery.bxslider.min.js" t="Include" />
+              <e p="jquery.SuperSlide.js" t="Include" />
+              <e p="layer.js" t="Include" />
+            </e>
+            <e p="login8" t="Include">
+              <e p="core.js" t="Include" />
+              <e p="jquery-1.8.3.min.js" t="Include" />
+              <e p="unslider.min.js" t="Include" />
+            </e>
+            <e p="main.js" t="Include" />
+            <e p="plugins.js" t="Include" />
+            <e p="Sac.js" t="Include" />
+            <e p="ss.js" t="Include" />
+          </e>
+          <e p="Mobi" t="Include">
+            <e p="DownEntryHK.js" t="Include" />
+            <e p="DownentryHKLm.js" t="Include" />
+            <e p="GameHK.js" t="Include" />
+            <e p="GameKC.js" t="Include" />
+            <e p="heartbeat.js" t="Include" />
+          </e>
+          <e p="myLayer.js" t="Include" />
+          <e p="otherConfig.js" t="Include" />
+          <e p="sea.js" t="Include" />
+          <e p="seajs-css.js" t="Include" />
+        </e>
+        <e p="Skin" t="Include">
+          <e p="Blue" t="Include">
+            <e p="arr_d.gif" t="Include" />
+            <e p="arr_u.gif" t="Include" />
+            <e p="b_bg.gif" t="Include" />
+            <e p="back-btn.png" t="Include" />
+            <e p="BoxBg1.png" t="Include" />
+            <e p="l_bg.gif" t="Include" />
+            <e p="l_d.gif" t="Include" />
+            <e p="l_u.gif" t="Include" />
+            <e p="l_u1.gif" t="Include" />
+            <e p="r_bg.gif" t="Include" />
+            <e p="r_d.gif" t="Include" />
+            <e p="r_u.gif" t="Include" />
+            <e p="r_u1.gif" t="Include" />
+            <e p="t_bg.gif" t="Include" />
+            <e p="t_bg1.gif" t="Include" />
+            <e p="text-bg.gif" t="Include" />
+            <e p="title_icon.gif" t="Include" />
+            <e p="topBg.gif" t="Include" />
+            <e p="trend.gif" t="Include" />
+          </e>
+          <e p="Green" t="Include">
+            <e p="arr_d.gif" t="Include" />
+            <e p="arr_u.gif" t="Include" />
+            <e p="b_bg.gif" t="Include" />
+            <e p="back-btn.png" t="Include" />
+            <e p="BoxBg1.png" t="Include" />
+            <e p="l_bg.gif" t="Include" />
+            <e p="l_d.gif" t="Include" />
+            <e p="l_u.gif" t="Include" />
+            <e p="l_u1.gif" t="Include" />
+            <e p="r_bg.gif" t="Include" />
+            <e p="r_d.gif" t="Include" />
+            <e p="r_u.gif" t="Include" />
+            <e p="r_u1.gif" t="Include" />
+            <e p="t_bg.gif" t="Include" />
+            <e p="t_bg1.gif" t="Include" />
+            <e p="text-bg.gif" t="Include" />
+            <e p="title_icon.gif" t="Include" />
+            <e p="topBg.gif" t="Include" />
+            <e p="trend.gif" t="Include" />
+          </e>
+          <e p="LoginValidate" t="Include">
+            <e p="Blue" t="Include">
+              <e p="LoginBg.jpg" t="Include" />
+              <e p="pro1.png" t="Include" />
+              <e p="pro2.png" t="Include" />
+              <e p="pro3.png" t="Include" />
+              <e p="Style.css" t="Include" />
+            </e>
+            <e p="Green" t="Include">
+              <e p="LoginBg.jpg" t="Include" />
+              <e p="pro1.png" t="Include" />
+              <e p="pro2.png" t="Include" />
+              <e p="pro3.png" t="Include" />
+              <e p="Style.css" t="Include" />
+            </e>
+            <e p="Violet" t="Include">
+              <e p="LoginBg.jpg" t="Include" />
+              <e p="pro1.png" t="Include" />
+              <e p="pro2.png" t="Include" />
+              <e p="pro3.png" t="Include" />
+              <e p="Style.css" t="Include" />
+            </e>
+            <e p="Yellow" t="Include">
+              <e p="LoginBg.jpg" t="Include" />
+              <e p="pro1.png" t="Include" />
+              <e p="pro2.png" t="Include" />
+              <e p="pro3.png" t="Include" />
+              <e p="Style.css" t="Include" />
+            </e>
+          </e>
+          <e p="MemberBlue.css" t="Include" />
+          <e p="MemberGreen.css" t="Include" />
+          <e p="MemberViolet.css" t="Include" />
+          <e p="MemberYellow.css" t="Include" />
+          <e p="Mian.css" t="Include" />
+          <e p="Violet" t="Include">
+            <e p="arr_d.gif" t="Include" />
+            <e p="arr_u.gif" t="Include" />
+            <e p="b_bg.gif" t="Include" />
+            <e p="back-btn.png" t="Include" />
+            <e p="BoxBg1.png" t="Include" />
+            <e p="l_bg.gif" t="Include" />
+            <e p="l_d.gif" t="Include" />
+            <e p="l_u.gif" t="Include" />
+            <e p="l_u1.gif" t="Include" />
+            <e p="r_bg.gif" t="Include" />
+            <e p="r_d.gif" t="Include" />
+            <e p="r_u.gif" t="Include" />
+            <e p="r_u1.gif" t="Include" />
+            <e p="t_bg.gif" t="Include" />
+            <e p="t_bg1.gif" t="Include" />
+            <e p="text-bg.gif" t="Include" />
+            <e p="title_icon.gif" t="Include" />
+            <e p="topBg.gif" t="Include" />
+            <e p="trend.gif" t="Include" />
+          </e>
+          <e p="Yellow" t="Include">
+            <e p="arr_d.gif" t="Include" />
+            <e p="arr_u.gif" t="Include" />
+            <e p="b_bg.gif" t="Include" />
+            <e p="back-btn.png" t="Include" />
+            <e p="BoxBg1.png" t="Include" />
+            <e p="l_bg.gif" t="Include" />
+            <e p="l_d.gif" t="Include" />
+            <e p="l_u.gif" t="Include" />
+            <e p="l_u1.gif" t="Include" />
+            <e p="r_bg.gif" t="Include" />
+            <e p="r_d.gif" t="Include" />
+            <e p="r_u.gif" t="Include" />
+            <e p="r_u1.gif" t="Include" />
+            <e p="t_bg.gif" t="Include" />
+            <e p="t_bg1.gif" t="Include" />
+            <e p="text-bg.gif" t="Include" />
+            <e p="title_icon.gif" t="Include" />
+            <e p="topBg.gif" t="Include" />
+            <e p="trend.gif" t="Include" />
+          </e>
+        </e>
+        <e p="SqlMap.config" t="Include" />
+        <e p="SqlScript" t="Include">
+          <e p="create_table_sequence.sql" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.csproj" t="IncludeRecursive" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WebGame" t="Include">
+          <e p="Global.asax.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>
