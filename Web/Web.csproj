@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1435861-FDC8-4E17-9C61-683B30935ABD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.DynamicProxy">
+      <HintPath>..\BinLibrary\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\BinLibrary\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common.Logging.Log4Net">
+      <HintPath>..\BinLibrary\IBatisNet.Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataAccess">
+      <HintPath>..\BinLibrary\IBatisNet.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\BinLibrary\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\BinLibrary\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net45\Mono.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587">
+      <HintPath>..\packages\ServiceStack.Common.5.8.0\lib\net45\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587">
+      <HintPath>..\packages\ServiceStack.Interfaces.5.8.0\lib\net45\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587">
+      <HintPath>..\packages\ServiceStack.Redis.5.8.0\lib\net45\ServiceStack.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587">
+      <HintPath>..\packages\ServiceStack.Text.5.8.0\lib\net45\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Handler\LoginHandler.ashx" />
+    <Content Include="Handler\ValidateImgHandler.ashx" />
+    <Content Include="LoginUserControl\Login5\Styles\images\AL_t_01.jpg" />
+    <Content Include="LoginUserControl\Login5\Styles\images\AL_t_02.jpg" />
+    <Content Include="LoginUserControl\Login5\Styles\images\AL_t_03.jpg" />
+    <Content Include="LoginUserControl\Login5\Styles\images\bg.jpg" />
+    <Content Include="LoginUserControl\Login5\Styles\images\btn.jpg" />
+    <Content Include="LoginUserControl\Login5\Styles\userlogin.css" />
+    <Content Include="Maps\ProductMap.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\Agent\AgentFinction.js" />
+    <Content Include="Scripts\Agent\Container.js" />
+    <Content Include="Scripts\Agent\Default.js" />
+    <Content Include="Scripts\Agent\GameDefault.js" />
+    <Content Include="Scripts\Agent\GameFinction.js" />
+    <Content Include="Scripts\Agent\GameKcFinction.js" />
+    <Content Include="Scripts\Agent\GameMiddle.js" />
+    <Content Include="Scripts\Agent\LoadMiddle.js" />
+    <Content Include="Scripts\Agent\SYSFinction.js" />
+    <Content Include="Scripts\ASC.js" />
+    <Content Include="Scripts\Format.js" />
+    <Content Include="Scripts\Globals.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Scripts\jquery.datepicker-zh-CN.js" />
+    <Content Include="Scripts\Jquery.js" />
+    <Content Include="Scripts\jquery.mobile-1.4.3.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\Member\common.js" />
+    <Content Include="Scripts\Member\Default.js" />
+    <Content Include="Scripts\Member\GameData.js" />
+    <Content Include="Scripts\Member\GameDataKc.js" />
+    <Content Include="Scripts\Member\GameDefault.js" />
+    <Content Include="Scripts\Member\GameMiddle.js" />
+    <Content Include="Scripts\Member\index.js" />
+    <Content Include="Scripts\Member\jquery-ui.js" />
+    <Content Include="Scripts\Member\jquery.bxslider.min.js" />
+    <Content Include="Scripts\Member\libs.js" />
+    <Content Include="Scripts\Member\login3\common.js" />
+    <Content Include="Scripts\Member\login3\config.js" />
+    <Content Include="Scripts\Member\login3\dialog.js" />
+    <Content Include="Scripts\Member\login3\home_main.min.js" />
+    <Content Include="Scripts\Member\login3\index.js" />
+    <Content Include="Scripts\Member\login3\jquery-ui.js" />
+    <Content Include="Scripts\Member\login3\jquery.bxslider.min.js" />
+    <Content Include="Scripts\Member\login3\jquery.SuperSlide.js" />
+    <Content Include="Scripts\Member\login3\layer.js" />
+    <Content Include="Scripts\Member\login8\core.js" />
+    <Content Include="Scripts\Member\login8\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\Member\login8\unslider.min.js" />
+    <Content Include="Scripts\Member\main.js" />
+    <Content Include="Scripts\Member\plugins.js" />
+    <Content Include="Scripts\Member\Sac.js" />
+    <Content Include="Scripts\Member\ss.js" />
+    <Content Include="Scripts\Mobi\DownEntryHK.js" />
+    <Content Include="Scripts\Mobi\DownentryHKLm.js" />
+    <Content Include="Scripts\Mobi\GameHK.js" />
+    <Content Include="Scripts\Mobi\GameKC.js" />
+    <Content Include="Scripts\Mobi\heartbeat.js" />
+    <Content Include="Scripts\myLayer.js" />
+    <Content Include="Scripts\otherConfig.js" />
+    <Content Include="Scripts\sea.js" />
+    <Content Include="Scripts\seajs-css.js" />
+    <Content Include="Skin\Blue\arr_d.gif" />
+    <Content Include="Skin\Blue\arr_u.gif" />
+    <Content Include="Skin\Blue\back-btn.png" />
+    <Content Include="Skin\Blue\BoxBg1.png" />
+    <Content Include="Skin\Blue\b_bg.gif" />
+    <Content Include="Skin\Blue\l_bg.gif" />
+    <Content Include="Skin\Blue\l_d.gif" />
+    <Content Include="Skin\Blue\l_u.gif" />
+    <Content Include="Skin\Blue\l_u1.gif" />
+    <Content Include="Skin\Blue\r_bg.gif" />
+    <Content Include="Skin\Blue\r_d.gif" />
+    <Content Include="Skin\Blue\r_u.gif" />
+    <Content Include="Skin\Blue\r_u1.gif" />
+    <Content Include="Skin\Blue\text-bg.gif" />
+    <Content Include="Skin\Blue\title_icon.gif" />
+    <Content Include="Skin\Blue\topBg.gif" />
+    <Content Include="Skin\Blue\trend.gif" />
+    <Content Include="Skin\Blue\t_bg.gif" />
+    <Content Include="Skin\Blue\t_bg1.gif" />
+    <Content Include="Skin\Green\arr_d.gif" />
+    <Content Include="Skin\Green\arr_u.gif" />
+    <Content Include="Skin\Green\back-btn.png" />
+    <Content Include="Skin\Green\BoxBg1.png" />
+    <Content Include="Skin\Green\b_bg.gif" />
+    <Content Include="Skin\Green\l_bg.gif" />
+    <Content Include="Skin\Green\l_d.gif" />
+    <Content Include="Skin\Green\l_u.gif" />
+    <Content Include="Skin\Green\l_u1.gif" />
+    <Content Include="Skin\Green\r_bg.gif" />
+    <Content Include="Skin\Green\r_d.gif" />
+    <Content Include="Skin\Green\r_u.gif" />
+    <Content Include="Skin\Green\r_u1.gif" />
+    <Content Include="Skin\Green\text-bg.gif" />
+    <Content Include="Skin\Green\title_icon.gif" />
+    <Content Include="Skin\Green\topBg.gif" />
+    <Content Include="Skin\Green\trend.gif" />
+    <Content Include="Skin\Green\t_bg.gif" />
+    <Content Include="Skin\Green\t_bg1.gif" />
+    <Content Include="Skin\LoginValidate\Blue\LoginBg.jpg" />
+    <Content Include="Skin\LoginValidate\Blue\pro1.png" />
+    <Content Include="Skin\LoginValidate\Blue\pro2.png" />
+    <Content Include="Skin\LoginValidate\Blue\pro3.png" />
+    <Content Include="Skin\LoginValidate\Blue\Style.css" />
+    <Content Include="Skin\LoginValidate\Green\LoginBg.jpg" />
+    <Content Include="Skin\LoginValidate\Green\pro1.png" />
+    <Content Include="Skin\LoginValidate\Green\pro2.png" />
+    <Content Include="Skin\LoginValidate\Green\pro3.png" />
+    <Content Include="Skin\LoginValidate\Green\Style.css" />
+    <Content Include="Skin\LoginValidate\Violet\LoginBg.jpg" />
+    <Content Include="Skin\LoginValidate\Violet\pro1.png" />
+    <Content Include="Skin\LoginValidate\Violet\pro2.png" />
+    <Content Include="Skin\LoginValidate\Violet\pro3.png" />
+    <Content Include="Skin\LoginValidate\Violet\Style.css" />
+    <Content Include="Skin\LoginValidate\Yellow\LoginBg.jpg" />
+    <Content Include="Skin\LoginValidate\Yellow\pro1.png" />
+    <Content Include="Skin\LoginValidate\Yellow\pro2.png" />
+    <Content Include="Skin\LoginValidate\Yellow\pro3.png" />
+    <Content Include="Skin\LoginValidate\Yellow\Style.css" />
+    <Content Include="Skin\MemberBlue.css" />
+    <Content Include="Skin\MemberGreen.css" />
+    <Content Include="Skin\MemberViolet.css" />
+    <Content Include="Skin\MemberYellow.css" />
+    <Content Include="Skin\Mian.css" />
+    <Content Include="Skin\Violet\arr_d.gif" />
+    <Content Include="Skin\Violet\arr_u.gif" />
+    <Content Include="Skin\Violet\back-btn.png" />
+    <Content Include="Skin\Violet\BoxBg1.png" />
+    <Content Include="Skin\Violet\b_bg.gif" />
+    <Content Include="Skin\Violet\l_bg.gif" />
+    <Content Include="Skin\Violet\l_d.gif" />
+    <Content Include="Skin\Violet\l_u.gif" />
+    <Content Include="Skin\Violet\l_u1.gif" />
+    <Content Include="Skin\Violet\r_bg.gif" />
+    <Content Include="Skin\Violet\r_d.gif" />
+    <Content Include="Skin\Violet\r_u.gif" />
+    <Content Include="Skin\Violet\r_u1.gif" />
+    <Content Include="Skin\Violet\text-bg.gif" />
+    <Content Include="Skin\Violet\title_icon.gif" />
+    <Content Include="Skin\Violet\topBg.gif" />
+    <Content Include="Skin\Violet\trend.gif" />
+    <Content Include="Skin\Violet\t_bg.gif" />
+    <Content Include="Skin\Violet\t_bg1.gif" />
+    <Content Include="Skin\Yellow\arr_d.gif" />
+    <Content Include="Skin\Yellow\arr_u.gif" />
+    <Content Include="Skin\Yellow\back-btn.png" />
+    <Content Include="Skin\Yellow\BoxBg1.png" />
+    <Content Include="Skin\Yellow\b_bg.gif" />
+    <Content Include="Skin\Yellow\l_bg.gif" />
+    <Content Include="Skin\Yellow\l_d.gif" />
+    <Content Include="Skin\Yellow\l_u.gif" />
+    <Content Include="Skin\Yellow\l_u1.gif" />
+    <Content Include="Skin\Yellow\r_bg.gif" />
+    <Content Include="Skin\Yellow\r_d.gif" />
+    <Content Include="Skin\Yellow\r_u.gif" />
+    <Content Include="Skin\Yellow\r_u1.gif" />
+    <Content Include="Skin\Yellow\text-bg.gif" />
+    <Content Include="Skin\Yellow\title_icon.gif" />
+    <Content Include="Skin\Yellow\topBg.gif" />
+    <Content Include="Skin\Yellow\trend.gif" />
+    <Content Include="Skin\Yellow\t_bg.gif" />
+    <Content Include="Skin\Yellow\t_bg1.gif" />
+    <Content Include="SqlScript\create_table_sequence.sql" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent\Web\Handler\LoginHandler.cs" />
+    <Compile Include="Agent\Web\Handler\ValidateImgHandler.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login1\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login2\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login3\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login4\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login5\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login6\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login7\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login8\LoginControl.cs" />
+    <Compile Include="Agent\Web\LoginUserControl\Login9\LoginControl.cs" />
+    <Compile Include="Agent\Web\WebBase\CallBLL.cs" />
+    <Compile Include="Agent\Web\WebBase\MemberPageBase.cs" />
+    <Compile Include="BLL\cz_admin_sysconfigBLL.cs" />
+    <Compile Include="BLL\cz_credit_flowBLL.cs" />
+    <Compile Include="BLL\cz_login_logBLL.cs" />
+    <Compile Include="BLL\cz_lotteryBLL.cs" />
+    <Compile Include="BLL\cz_phase_kl10BLL.cs" />
+    <Compile Include="BLL\cz_rate_kcBLL.cs" />
+    <Compile Include="BLL\cz_stat_onlineBLL.cs" />
+    <Compile Include="BLL\cz_stat_top_onlineBLL.cs" />
+    <Compile Include="BLL\cz_usersBLL.cs" />
+    <Compile Include="BLL\cz_users_childBLL.cs" />
+    <Compile Include="BLL\cz_user_psw_err_logBLL.cs" />
+    <Compile Include="Common\CookieHelper.cs" />
+    <Compile Include="Common\DESEncrypt.cs" />
+    <Compile Include="Common\JsonHandle.cs" />
+    <Compile Include="Common\JsonHelper.cs" />
+    <Compile Include="Common\LSRequest.cs" />
+    <Compile Include="Common\PageBase.cs" />
+    <Compile Include="Common\Redis\CacheHelper.cs" />
+    <Compile Include="Common\Redis\FileCacheHelper.cs" />
+    <Compile Include="Common\Redis\RedisConfiguration.cs" />
+    <Compile Include="Common\Redis\RedisConnectType.cs" />
+    <Compile Include="Common\Redis\RedisExpires.cs" />
+    <Compile Include="Common\Redis\RedisKeys.cs" />
+    <Compile Include="Common\Redis\RedisManager.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="DBUtility\BaseDA.cs" />
+    <Compile Include="DBUtility\CommandText.cs" />
+    <Compile Include="DBUtility\EffentNextType.cs" />
+    <Compile Include="DBUtility\NpSqlBase.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\agent_userinfo_session.cs" />
+    <Compile Include="Model\cz_login_log.cs" />
+    <Compile Include="Model\cz_rate_kc.cs" />
+    <Compile Include="Model\cz_stat_online.cs" />
+    <Compile Include="Model\cz_users.cs" />
+    <Compile Include="Model\cz_users_child.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\RedisConnectSplit.cs" />
+    <Compile Include="Model\ReturnResult.cs" />
+    <Compile Include="Model\Validate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebGame\Global.asax.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Providers.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SqlMap.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>false</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5279</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>false</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

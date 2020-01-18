@@ -1,0 +1,1 @@
+﻿$(".trade").click(function(){dialog.error("消息","您还没登录",{"游客登录":function(){guestLogin()}})});var href=location.href.split("/");href=href.slice(href.length-1,href.length).toString(String).split(".").slice(0,1).toString(String).toLowerCase(),"main"==href&&(href=""),href+=".html",$(".menulinks").children("[href='"+href+"']").addClass("menuactive");
