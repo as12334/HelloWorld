@@ -1,6 +1,7 @@
 ﻿using Agent.Web.WebBase;
 using LotterySystem.Common;
 using LotterySystem.Common.Redis;
+using Web;
 
 namespace Agent.Web.Handler
 {
@@ -15,16 +16,25 @@ namespace Agent.Web.Handler
     {
         public void ProcessRequest(HttpContext context)
         {
-            string str = LSRequest.qq("action").Trim();
-            string strResult = "";
-            string str3 = str;
-            if ((str3 != null) && (str3 == "user_login"))
+            try
             {
-                this.user_login(context, ref strResult);
+                string str = LSRequest.qq("action").Trim();
+                string strResult = "";
+                string str3 = str;
+                if ((str3 != null) && (str3 == "user_login"))
+                {
+                    this.user_login(context, ref strResult);
+                }
+                context.Response.ContentType = "text/json";
+                context.Response.Write(strResult);
+                context.Response.End();
             }
-            context.Response.ContentType = "text/json";
-            context.Response.Write(strResult);
-            context.Response.End();
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
         }
 
         private void user_login(HttpContext context, ref string strResult)

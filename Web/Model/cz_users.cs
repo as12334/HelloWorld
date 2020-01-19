@@ -1,9 +1,10 @@
 using System;
 
-namespace LotterySystem.Model
+namespace Web
 {
     public class cz_users
     {
+        private int id;
         private string u_id;
         private string u_name;
         private string u_psw;
@@ -20,7 +21,7 @@ namespace LotterySystem.Model
         private decimal six_usable_credit;
         private string six_kind;
         private int a_state;
-        private string allow_sale;
+        private int allow_sale;
         private int? allow_view_report;
         private int six_allow_maxrate;
         private int six_low_maxrate;
@@ -29,9 +30,9 @@ namespace LotterySystem.Model
         private int allow_opt;
         private int is_changed;
         private int kc_rate;
-        private int kc_credit;
-        private int kc_usable_credit;
-        private int kc_kind;
+        private decimal kc_credit;
+        private decimal kc_usable_credit;
+        private string kc_kind;
         private int kc_allow_sale;
         private int negative_sale;
         private int kc_allow_maxrate;
@@ -47,6 +48,13 @@ namespace LotterySystem.Model
 
         
         
+        public int get_id() {
+	        return id;
+        }
+
+        public void set_id(int id) {
+	        this.id = id;
+        }
 	public string get_u_id() {
 		return u_id;
 	}
@@ -187,11 +195,11 @@ namespace LotterySystem.Model
 		this.a_state = a_state;
 	}
 
-	public string get_allow_sale() {
+	public int get_allow_sale() {
 		return allow_sale;
 	}
 
-	public void set_allow_sale(string allow_sale) {
+	public void set_allow_sale(int allow_sale) {
 		this.allow_sale = allow_sale;
 	}
 
@@ -259,27 +267,27 @@ namespace LotterySystem.Model
 		this.kc_rate = kc_rate;
 	}
 
-	public int get_kc_credit() {
+	public decimal get_kc_credit() {
 		return kc_credit;
 	}
 
-	public void set_kc_credit(int kc_credit) {
+	public void set_kc_credit(decimal kc_credit) {
 		this.kc_credit = kc_credit;
 	}
 
-	public int get_kc_usable_credit() {
+	public decimal get_kc_usable_credit() {
 		return kc_usable_credit;
 	}
 
-	public void set_kc_usable_credit(int kc_usable_credit) {
+	public void set_kc_usable_credit(decimal kc_usable_credit) {
 		this.kc_usable_credit = kc_usable_credit;
 	}
 
-	public int get_kc_kind() {
+	public string get_kc_kind() {
 		return kc_kind;
 	}
 
-	public void set_kc_kind(int kc_kind) {
+	public void set_kc_kind(string kc_kind) {
 		this.kc_kind = kc_kind;
 	}
 

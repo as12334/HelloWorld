@@ -18,7 +18,7 @@ namespace LotterySystem.Model
 		private decimal six_usable_credit;
 		private string six_kind;
 		private int? a_state;
-		private string allow_sale;
+		private int? allow_sale;
 		private int? allow_view_report;
 		private int? six_allow_maxrate;
 		private int? six_low_maxrate;
@@ -27,9 +27,9 @@ namespace LotterySystem.Model
 		private int? allow_opt;
 		private int? is_changed;
 		private int? kc_rate;
-		private int? kc_credit;
-		private int? kc_usable_credit;
-		private int? kc_kind;
+		private double kc_credit;
+		private double kc_usable_credit;
+		private string kc_kind;
 		private int? kc_allow_sale;
 		private int? kc_allow_maxrate;
 		private int? kc_low_maxrate;
@@ -154,7 +154,10 @@ namespace LotterySystem.Model
 		{
 			this.six_kind = six_kind;
 		}
-
+		public string get_six_kind()
+		{
+			return six_kind;
+		}
 		public int? get_a_state()
 		{
 			return a_state;
@@ -165,12 +168,12 @@ namespace LotterySystem.Model
 			this.a_state = a_state;
 		}
 
-		public string get_allow_sale()
+		public int? get_allow_sale()
 		{
 			return allow_sale;
 		}
 
-		public void set_allow_sale(string allow_sale)
+		public void set_allow_sale(int? allow_sale)
 		{
 			this.allow_sale = allow_sale;
 		}
@@ -191,9 +194,13 @@ namespace LotterySystem.Model
 		}
 
 
-		public void set_kc_kind(int? kc_kind)
+		public void set_kc_kind(string kc_kind)
 		{
 			this.kc_kind = kc_kind;
+		}
+		public string get_kc_kind()
+		{
+			return kc_kind;
 		}
 
 		public int? get_kc_allow_sale()

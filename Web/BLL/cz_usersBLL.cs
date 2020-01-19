@@ -15,7 +15,7 @@ namespace LotterySystem.BLL
         public cz_users AgentLogin(string userName)
         {
 
-            BaseDA.Get<Product>("SelectByProductId", 16);
+            BaseDA.Get<cz_users>("SelectById", 1);
             var executeQuery = ExecuteQuery($"SELECT * FROM cz_users WHERE u_name = '{userName}'");
             List<cz_users> tableToEntity = TableToEntity<cz_users>(executeQuery.Tables[0]);
             return tableToEntity[0];
