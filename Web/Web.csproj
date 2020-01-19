@@ -152,7 +152,8 @@
     <Content Include="LoginUserControl\Login5\Styles\images\bg.jpg" />
     <Content Include="LoginUserControl\Login5\Styles\images\btn.jpg" />
     <Content Include="LoginUserControl\Login5\Styles\userlogin.css" />
-    <Content Include="Maps\ProductMap.xml">
+    <Content Include="Mapper\cz_users_mapper.xml" />
+    <Content Include="Mapper\ProductMap.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
@@ -396,6 +397,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\SQL" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -78,6 +78,7 @@
             <e p="RedisKeys.cs" t="Include" />
             <e p="RedisManager.cs" t="Include" />
           </e>
+          <e p="SQL" t="Include" />
           <e p="Utils.cs" t="Include" />
         </e>
         <e p="DBUtility" t="Include">
@@ -108,7 +109,8 @@
             </e>
           </e>
         </e>
-        <e p="Maps" t="Include">
+        <e p="Mapper" t="Include">
+          <e p="cz_users_mapper.xml" t="Include" />
           <e p="ProductMap.xml" t="Include" />
         </e>
         <e p="Model" t="Include">

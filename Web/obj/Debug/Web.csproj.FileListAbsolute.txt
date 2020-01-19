@@ -1,4 +1,3 @@
-E:\WORK\HelloWorld\Web\bin\Maps\ProductMap.xml
 E:\WORK\HelloWorld\Web\bin\Providers.config
 E:\WORK\HelloWorld\Web\bin\SqlMap.config
 E:\WORK\HelloWorld\Web\bin\Web.dll
@@ -49,3 +48,4 @@ E:\WORK\HelloWorld\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache
 E:\WORK\HelloWorld\Web\obj\Debug\Web.csproj.CopyComplete
 E:\WORK\HelloWorld\Web\obj\Debug\Web.dll
 E:\WORK\HelloWorld\Web\obj\Debug\Web.pdb
+E:\WORK\HelloWorld\Web\bin\Mapper\ProductMap.xml
